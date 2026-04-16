@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//mnt/c/Users/enzos/**)",
+      "Bash(npm run:*)",
+      "Bash(node_modules/.bin/next dev:*)",
+      "Bash(node node_modules/next/dist/bin/next dev)",
+      "Bash(curl -s -H \"x-api-key: wabi_6380cec4ee364835a650d59f121ca297\" \"http://192.168.11.58:3000/api/v1/recipes/search?ingredients=豆腐\")",
+      "Bash(curl -s -H \"x-api-key: wabi_6380cec4ee364835a650d59f121ca297\" \"http://192.168.11.58:3000/api/v1/recipes/search?ingredients=%E8%B1%86%E8%85%90\")",
+      "Bash(curl -s -G -H \"x-api-key: wabi_6380cec4ee364835a650d59f121ca297\" --data-urlencode \"ingredients=豆腐\" \"http://192.168.11.58:3000/api/v1/recipes/search\")",
+      "Bash(ls \"c:\\\\Users\\\\enzos\\\\wasabi-api\\\\.env\"*)"
+    ]
+  }
+}
