@@ -9,9 +9,9 @@ const supabase = createClient(
 // GET /api/v1/recipes/:id
 export async function GET(
   req: NextRequest,
-  { params }: { params: { id: string } },
+  { params }: { params: Promise<{ id: string }> },
 ) {
-  const { id } = params;
+  const { id } = await params;
 
   const { data: recipe, error } = await supabase
     .from("recipes")
